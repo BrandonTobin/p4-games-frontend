@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-
+import '../styles/Home.css'
 const Thumbnail = ({ arr, image, index }) => {
-  return (<div className="tumbnail">
+  return (<div className="thumbnail">
     {
       arr.map((imgsrc, i) => (
         <img
