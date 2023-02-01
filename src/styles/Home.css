@@ -16,6 +16,11 @@
   margin-bottom: 2rem;
 }
 
+img {
+  max-width: 550px;
+  max-height: 650px;
+}
+
 .home-slideshow {
   display: flex;
   flex-direction: column;
