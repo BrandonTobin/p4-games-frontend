@@ -16,10 +16,10 @@ function App() {
         <Link id="home" to="/">
           <div> Home </div>
         </Link>
-        <Link id="feed" to="/feed">
+        <Link id="games" to="/games">
           <div> Games </div>
         </Link>
-        <Link id="authors" to="/authors">
+        <Link id="users" to="/users">
           <div> Users </div>
         </Link>
         <Link id="aboutus" to="/aboutus">
