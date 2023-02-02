@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import React from "react"
+import { Carousel } from "react-bootstrap"
 import '../styles/Carousel.css'
 
-function Carousel(props) {
-    const urlGame = "http://localhost:3000/game"
+function ImageCarousel(props) {
+    const urlGame = "https://p4-games.herokuapp.com/game"
     const [game, setGame] = useState(null)
         useEffect(() => {
         fetch(urlGame)
@@ -42,4 +43,4 @@ function Carousel(props) {
         }
 }
 
-export default Carousel
+export default ImageCarousel

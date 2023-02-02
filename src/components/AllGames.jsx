@@ -8,7 +8,7 @@ import { getUserToken } from '../utils/authToken'
 const token = getUserToken()
 function AllGames(props) {
     const [games, setGames] = useState([])
-    const BASE_URL = `http://localhost:3000/game`
+    const BASE_URL = `https://p4-games.herokuapp.com//game`
     const getGames = async () => {
         try {
             const response = await fetch(BASE_URL)
@@ -34,7 +34,7 @@ function AllGames(props) {
                     </div>
                 </Link>
                 <Search />
-                {token ? <img src="https://i.ytimg.com/vi/1SdtvZ-Lrh0/maxresdefault.jpg" id="avatar-image" />:<a id="login-box" href="/auth">LOGIN REGISTER</a>}
+                {token ? <img src="https://i.ytimg.com/vi/1SdtvZ-Lrh0/maxresdefault.jpg" id="avatar-image" />:<a id="login-box" href="/auth">Login Register</a>}
             </div>
 
                 <h1 className='all-games-title'>All Games</h1>

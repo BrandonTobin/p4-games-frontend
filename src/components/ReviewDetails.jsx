@@ -21,8 +21,8 @@ function ReviewDetails(props) {
     const [reviews, setReviews] = useState(null)
     const navigate = useNavigate()
     const { currentUser } = useContext(UserContext)
-    const URL = 'http://localhost:3000/game'
-    const URL4 = `http://localhost:3000/review/edit/${id}`
+    const URL = 'https://p4-games.herokuapp.com/game'
+    const URL4 = `https://p4-games.herokuapp.com/review/edit/${id}`
 
     const getReview = async () => {
         try {
@@ -64,7 +64,7 @@ function ReviewDetails(props) {
             const response = await fetch(URL4, requestOptions)
             const updatedReview = await response.json()
             setReviews(updatedReview)
-     
+            
             navigate(-1)
 
         } catch (err) {

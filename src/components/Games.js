@@ -5,7 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { FaRegHandPointRight } from "react-icons/fa";
 import Search from './Search'
-import Carousel from './Carousel'
+import ImageCarousel from './ImageCarousel'
 import GameCarousel from './GameCarousel';
 import '../styles/HeaderHomepage.css'
 import logo from '../images/gamesradar_owler_20190209_163111_original.jpg'
@@ -15,7 +15,7 @@ function Games(props) {
   const navigate = useNavigate()
   const token = getUserToken()
   const [games, setGames] = useState([])
-  const BASE_URL = 'http://localhost:3000/game'
+  const BASE_URL = 'https://p4-games.herokuapp.com/game'
   const getGames = async () => {
     try {
       const response = await fetch(BASE_URL)
@@ -64,7 +64,7 @@ function Games(props) {
           </div> : <a id="login-box" href="/auth">LOGIN REGISTER</a>}
       </div>
       <div className='content'>
-        <Carousel gameList={gameTitleList} gameImage={gameImageList} />
+        <ImageCarousel gameList={gameTitleList} gameImage={gameImageList} />
       </div>
       <Link style={{ textDecoration: "none" }} to="/viewAllTopRatedGames">
         <h1 className='top-rated-games'><div className="View-All" textDecoration="none">All Games</div></h1>

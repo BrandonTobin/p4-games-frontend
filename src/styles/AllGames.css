@@ -1,0 +1,80 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.header-homepage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.header-logo {
+  height: 50px;
+  width: 50px;
+}
+
+#avatar-image {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#login-box {
+  color: blue;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.all-games-title {
+  font-size: 32px;
+  margin: 40px 0 20px;
+}
+
+.All-Games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.card-game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  margin: 20px;
+  box-shadow: 0px 0px 10px gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 60%;
+}
+
+.card-each-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-title h3 {
+  font-size: 22px;
+  margin: 0;
+}

@@ -16,7 +16,7 @@ function AuthRegister(props) {
                 },
             }
             const newUser = await fetch(
-                "http://localhost:3000/auth/register",
+                "https://p4-games.herokuapp.com/auth/register",
                 configs
             )
 

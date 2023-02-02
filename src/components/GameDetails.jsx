@@ -19,10 +19,10 @@ function GameDetails(props) {
     const [reviews, setReviews] = useState([])
     const [averageRating, setAverageRating] = useState(0)
 
-    const BASE_URL = `http://localhost:3000/game/${id}`
-    const URL2 = `http://localhost:3000/review/${id}`
-    const URL3 = `http://localhost:3000/review/${id}`
-    const URL4 = `http://localhost:3000/review/edit/${id}`
+    const BASE_URL = `https://p4-games.herokuapp.com/game/${id}`
+    const URL2 = `https://p4-games.herokuapp.com/review/${id}`
+    const URL3 = `https://p4-games.herokuapp.com/review/${id}`
+    const URL4 = `https://p4-games.herokuapp.com/review/edit/${id}`
 
     const getGame = async () => {
         try {

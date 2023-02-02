@@ -16,7 +16,7 @@ function Auth(props){
                 },
             }
             const newUser = await fetch(
-                "http://localhost:3000/auth/register",
+                "https://p4-games.herokuapp.com/auth/register",
                 configs
             )
             const parsedUser = await newUser.json()
@@ -42,7 +42,7 @@ function Auth(props){
                 },
             }
             const response = await fetch(
-                "http://localhost:3000/auth/login",
+                "https://p4-games.herokuapp.com/auth/login",
                 configs
             )
     
