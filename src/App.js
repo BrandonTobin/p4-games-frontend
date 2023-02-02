@@ -1,47 +1,38 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import { Link } from "react-router-dom";
-import Home from "./pages/Home";
-import Users from "./pages/Users";
-import AboutUs from "./pages/AboutUs";
-import UserDetails from "./components/UserDetails";
-import Games from "./pages/Games";
-import GameDetails from "./pages/GameDetails";
-import Reviews from "./components/Reviews";
+import './App.css';
+import { Route, Routes } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import Games from './components/Games';
+import GameDetails from './components/GameDetails';
+import ReviewDetails from './components/ReviewDetails';
+import AllGames from './components/AllGames'
+import AuthRegister from './components/AuthRegister';
+import Auth from './components/Auth'
+import { UserContext } from './data';
+import { useState } from 'react';
 
 function App() {
+  const { Provider: UserInfo } = UserContext
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [currentUser, setCurrentUser] = useState(null)
   return (
-    <>
-      <nav className="nav">
-        <Link id="home" to="/">
-          <div> Home </div>
-        </Link>
-        <Link id="games" to="/games">
-          <div> Games </div>
-        </Link>
-        <Link id="users" to="/users">
-          <div> Users </div>
-        </Link>
-        <Link id="aboutus" to="/aboutus">
-          <div> About Us </div>
-        </Link>
-        <Link id="login" to="/login">
-          <div> Login </div>
-        </Link>
-        <Link id="signup" to="/signup">
-          <div> Sign Up </div>
-        </Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/games" element={<Games />} />
-        <Route path="/users" element={<Users />} />
-        <Route path="/users/:id" element={<UserDetails />} />
-        <Route path="/games/:id" element={<GameDetails />} />
-        <Route path="/games/:id" element={<Reviews />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-      </Routes>
-    </>
+    <div className="App">
+      <UserInfo value={{
+        isAuthenticated,
+        currentUser,
+        setAuth: setIsAuthenticated,
+        setUser: setCurrentUser
+      }}>
+        <Routes>
+          <Route path="/" element={<Games />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/auth/register" element={<AuthRegister />} />
+          <Route path="/viewAllTopRatedGames" element={<AllGames />} />
+          <Route path="/review/:id" element={<GameDetails />} />
+          <Route path="/review/edit/:id" element={<ReviewDetails />} />
+        </Routes>
+      </UserInfo>
+    </div>
   );
 }
 
