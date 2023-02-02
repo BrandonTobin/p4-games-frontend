@@ -8,7 +8,7 @@ import '../styles/SearchBar.css'
 const Search = (props) => {
     const [searchValue, setSearchValue] = useState('')
     const [games, setGames] = useState('')
-    const BASE_URL = `http://localhost:3000/game`
+    const BASE_URL = `https://p4-games.herokuapp.com/game`
 
     const getGames = async () => {
         try {
