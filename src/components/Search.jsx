@@ -33,7 +33,7 @@ const Search = (props) => {
         <div className="search-context">
             <div className="search-context-inner">
                 <p id="look-up-symbol">{<BsSearch />}</p>
-                <input type="text" value={searchValue} onChange={onChange} id="search" autoComplete="off" placeholder="Search game titles....." />
+                <input type="text" value={searchValue} onChange={onChange} id="search" autoComplete="off" placeholder="Search game titles" />
                 <Link to={`/details/${searchValue}`}>
                     <button onClick={() => <Link to={`/details/${searchValue}`}></Link>} id="search-submit">Search</button>
                 </Link>

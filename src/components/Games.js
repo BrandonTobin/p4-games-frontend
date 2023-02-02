@@ -8,7 +8,7 @@ import Search from './Search'
 import ImageCarousel from './ImageCarousel'
 import GameCarousel from './GameCarousel';
 import '../styles/HeaderHomepage.css'
-import logo from '../images/gamesradar_owler_20190209_163111_original.jpg'
+import logo from '../images/game-review-final.jpeg'
 import { getUserToken, setUserToken, clearUserToken, decodeToken } from "../utils/authToken"
 
 function Games(props) {

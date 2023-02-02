@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { useState, useEffect } from "react"
 import Search from "./Search"
 import '../styles/AllGames.css'
-import logo from '../images/gamesradar_owler_20190209_163111_original.jpg'
+import logo from '../images/game-review-final.jpeg'
 import { getUserToken } from '../utils/authToken'
 
 const token = getUserToken()

@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import '../styles/GameDetails.css'
 import { Link } from 'react-router-dom'
 import { getUserToken } from '../utils/authToken'
-import logo from '../images/gamesradar_owler_20190209_163111_original.jpg'
+import logo from '../images/game-review-final.jpeg'
 
 function GameDetails(props) {
     const token = getUserToken()
