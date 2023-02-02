@@ -25,6 +25,12 @@ function App() {
         <Link id="aboutus" to="/aboutus">
           <div> About Us </div>
         </Link>
+        <Link id="login" to="/login">
+          <div> Login </div>
+        </Link>
+        <Link id="signup" to="/signup">
+          <div> Sign Up </div>
+        </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
