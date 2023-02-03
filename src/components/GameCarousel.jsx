@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Carousel from "react-slick";
 import '../styles/HeaderHomepage.css'
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function GameCarousel(props) {
@@ -94,14 +93,6 @@ function GameCarousel(props) {
                 </div>
                 </Link>
             </Carousel>
-            <div className="button-game-slider">
-                <button className="back" onClick={() => arrowRef.current.slickPrev()}>
-                    {<FaChevronLeft />}
-                </button>
-                <button className="next" onClick={() => arrowRef.current.slickNext()}>
-                    {<FaChevronRight />}
-                </button>
-            </div>
         </>
     )
 }

@@ -1,7 +1,6 @@
-import {getUserToken,setUserToken, clearUserToken, decodeToken} from "../utils/authToken"
+import { getUserToken, setUserToken, clearUserToken, decodeToken } from "../utils/authToken"
 import { useContext } from "react"
 import { UserContext } from "../data"
-import RegisterForm from "./RegisterForm"
 import LoginForm from "./LoginForm"
 
 function Auth(props){

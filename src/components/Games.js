@@ -3,7 +3,6 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-import { FaRegHandPointRight } from "react-icons/fa";
 import Search from './Search'
 import ImageCarousel from './ImageCarousel'
 import GameCarousel from './GameCarousel';

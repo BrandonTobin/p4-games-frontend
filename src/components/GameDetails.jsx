@@ -26,10 +26,10 @@ function GameDetails(props) {
 
     const getGame = async () => {
         try {
-
             const response = await fetch(URL2)
             const foundGame = await response.json()
             setGame(foundGame.title)
+            console.log(foundGame)
             setReviews(foundGame.reviews)
         } catch (err) {
             console.log(err)
@@ -37,21 +37,7 @@ function GameDetails(props) {
     }
 
     
-    async function average() {
-        const array = []
-        let sum = 0
-        try {
-            for (let i = 0; i < reviews.length; i++) {
-                array.push(reviews[i].rating)
-                sum += array[i]
-          
-            }
-            setAverageRating(sum/array.length)
-        } catch (err) {
-            console.log(err)
-        }
-    }
-    average()
+
 
     const handleChange = (e) => {
         const userInput = { ...editForm }
@@ -88,26 +74,10 @@ function GameDetails(props) {
     useEffect(() => {
         getGame()
     }, [])
-    useEffect(() => {
-        average()
-    }, [reviews.length])
+    // useEffect(() => {
+    //     average()
+    // }, [reviews.length])
 
-    let items = document.querySelectorAll('.progress-item');
-    const counters = Array(items.length);
-    const intervals = Array(items.length);
-    counters.fill(0);
-    items.forEach((number, index) => {
-        intervals[index] = setInterval(() => {
-            if (counters[index] == parseInt(number.dataset.num)) {
-                clearInterval(intervals[index]);
-            } else {
-                counters[index] += 1;
-                number.style.background = "conic-gradient(red calc(" + counters[index] + "%), white 0deg)";
-                number.setAttribute('data-value', counters[index] + "%");
-                number.innerHTML = counters[index] + "%";
-            }
-        }, 15);
-    });
 
     const loaded = () => (
         <div className='details-content'>

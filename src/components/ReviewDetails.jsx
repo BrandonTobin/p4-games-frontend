@@ -134,7 +134,7 @@ function ReviewDetails(props) {
     const isLoading = () => (
         <>
             <h1>
-                No review...
+                No review
             </h1>
         </>
     );

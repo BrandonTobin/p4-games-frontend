@@ -8,7 +8,7 @@ import { getUserToken } from '../utils/authToken'
 const token = getUserToken()
 function AllGames(props) {
     const [games, setGames] = useState([])
-    const BASE_URL = `https://p4-games.herokuapp.com//game`
+    const BASE_URL = `https://p4-games.herokuapp.com/game`
     const getGames = async () => {
         try {
             const response = await fetch(BASE_URL)
