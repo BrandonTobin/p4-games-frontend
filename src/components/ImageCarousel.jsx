@@ -24,7 +24,7 @@ function ImageCarousel(props) {
             const eachGame = game.map((games, imageIndex) =>
                 
                 <Carousel.Item key={imageIndex} interval={3000}>
-                  `<a href={`/review/${games._id}`}>
+                `<a href={`/review/${games._id}`}>
                     <img
                         className="carousel"
                         src={games.image}

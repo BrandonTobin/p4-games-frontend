@@ -32,9 +32,12 @@
 }
 
 .all-games-title {
-  font-size: 32px;
-  margin: 40px 0 20px;
-}
+  font-family:'Courier New', Courier, monospace;
+  font-size: 50px;
+  margin: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  }
 
 .All-Games {
   display: flex;
@@ -68,6 +71,7 @@
 
 .card-title {
   height: 40%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +81,5 @@
 .card-title h3 {
   font-size: 22px;
   margin: 0;
+  text-align: center;
 }

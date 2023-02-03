@@ -96,9 +96,6 @@ function GameDetails(props) {
                         <p className='game-info'><span className='age-rating'>{game.agerating}</span></p>
                     </div>
                     <div className='container1'>
-                        <div id="progress" >
-                            <div data-num={averageRating} className="progress-item">ds</div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -118,7 +115,7 @@ function GameDetails(props) {
                                         type="number"
                                         className="rating"
                                         name="rating"
-                                        placeholder="1-100"
+                                        placeholder="1-10"
                                         min="1"
                                         max="100"
                                         autoComplete='off'
