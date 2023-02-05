@@ -17,18 +17,21 @@ Game Reviews is a MERN Stack Video Game Review Application. It is a web-based pl
 # Technologies Used:
 
 -MongoDB
+
 -Express
+
 -React.js
+
 -Node.js
+
 -Mongoose
+
 -JWT
 
 ---
 
 # Site Images:
 
----
-
 # Home Page
 
-![Home Page](Screenshot 2023-02-05 at 5.38.17 PM.png)
+![Home Page](https://imgur.com/a/2CdIsiV)
