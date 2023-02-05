@@ -35,3 +35,23 @@ Game Reviews is a MERN Stack Video Game Review Application. It is a web-based pl
 # Home Page
 
 ![img](https://i.imgur.com/Ls8TUn0.png)
+
+# All Games
+
+![img](https://i.imgur.com/M0BwVyz.png)
+
+# Game Review Page
+
+![img](https://i.imgur.com/9q88kMd.png)
+
+# Review Edit Page
+
+![img](https://i.imgur.com/3CJtvyl.png)
+
+# Login
+
+![img](https://i.imgur.com/Q6a0O0b.png)
+
+# Register
+
+![img](https://i.imgur.com/D0TPqa5.png)
