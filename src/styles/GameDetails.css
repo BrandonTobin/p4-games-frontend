@@ -1,7 +1,7 @@
 .header-homepage {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   text-decoration: none;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .game-description {
-  width: 80%;
+  width: 40%;
   padding: 20px;
   text-align: center;
 }
@@ -72,7 +72,7 @@
   flex-direction: column;
   align-items: center;
   width: 500px;
-  height: 400px;
+  height: 375px;
   padding: 20px;
   background-color: rgb(172, 172, 172);
   border-radius: 5px;

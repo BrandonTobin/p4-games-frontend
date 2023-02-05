@@ -34,7 +34,7 @@ function AllGames(props) {
                     </div>
                 </Link>
                 <Search />
-                {token ? <img src="https://i.ytimg.com/vi/1SdtvZ-Lrh0/maxresdefault.jpg" id="avatar-image" />:<a id="login-box" href="/auth">Login Register</a>}
+                {token ? <img src="https://minecraftpfp.com/api/pfp/null.png" id="avatar-image" />:<a id="login-box" href="/auth">Login Register</a>}
             </div>
 
                 <h1 className='all-games-title'>All Games</h1>

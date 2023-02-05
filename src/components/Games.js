@@ -1,11 +1,9 @@
-
-
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Search from './Search'
-import ImageCarousel from './ImageCarousel'
-import GameCarousel from './GameCarousel';
+import Slider from './Slider'
+import GameSlider from './GameSlider';
 import '../styles/HeaderHomepage.css'
 import logo from '../images/game-review-final.jpeg'
 import { getUserToken, setUserToken, clearUserToken, decodeToken } from "../utils/authToken"
@@ -56,21 +54,21 @@ function Games(props) {
         <Search gameList={gameTitleList} />
         {token ?
           <div className='avatar-logout-button'>
-            <img src="https://i.ytimg.com/vi/1SdtvZ-Lrh0/maxresdefault.jpg" id="avatar-image" />
+            <img src="https://minecraftpfp.com/api/pfp/null.png" id="avatar-image" />
             <div className='button-box'>
               <button type="button" onClick={logout} className='btn btn-outline-warning'>Logout</button>
             </div>
           </div> : <a id="login-box" href="/auth">LOGIN REGISTER</a>}
       </div>
       <div className='content'>
-        <ImageCarousel gameList={gameTitleList} gameImage={gameImageList} />
+        <Slider gameList={gameTitleList} gameImage={gameImageList} />
       </div>
       <Link style={{ textDecoration: "none" }} to="/viewAllTopRatedGames">
         <h1 className='top-rated-games'><div className="View-All" textDecoration="none">All Games</div></h1>
       </Link>
       <div className='bottom-half'>
         <div className="games-carousel-bar">
-          <GameCarousel image={gameImageList} title={gameTitleList} desc={gameDescList} id={gameID} />
+          <GameSlider image={gameImageList} title={gameTitleList} desc={gameDescList} id={gameID} />
         </div>
       </div>
     </div>

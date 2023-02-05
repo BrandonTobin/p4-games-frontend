@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import React from "react"
 import { Carousel } from "react-bootstrap"
-import '../styles/Carousel.css'
+import '../styles/slider.css'
 
-function ImageCarousel(props) {
+function Slider(props) {
     const urlGame = "https://p4-games.herokuapp.com/game"
     const [game, setGame] = useState(null)
         useEffect(() => {
@@ -19,16 +19,16 @@ function ImageCarousel(props) {
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);};
         if (!game){
-            return(<h1>NO GAMES</h1>)
+            return(<h1>No Games</h1>)
         }else{
             const eachGame = game.map((games, imageIndex) =>
                 
-                <Carousel.Item key={imageIndex} interval={3000}>
-                `<a href={`/review/${games._id}`}>
+                <Carousel.Item key={imageIndex} interval={5000}>
+                   `<a href={`/review/${games._id}`}>
                     <img
-                        className="carousel"
+                        className="slider"
                         src={games.image}
-                        alt="First image"
+                        alt="First slide"
                     />
                     </a>
                     <Carousel.Caption>
@@ -43,4 +43,4 @@ function ImageCarousel(props) {
         }
 }
 
-export default ImageCarousel
+export default Slider

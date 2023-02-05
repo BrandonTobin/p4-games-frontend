@@ -1,16 +1,17 @@
 import React, { useRef } from "react";
-import Carousel from "react-slick";
+import Slider from "react-slick";
 import '../styles/HeaderHomepage.css'
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function GameCarousel(props) {
+function GameSlider(props) {
     const arrowRef = useRef(null)
     let settings = {
         className: "center",
         centermode: true,
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
         initialSlide: 0,
@@ -43,7 +44,7 @@ function GameCarousel(props) {
     };
     return (
         <>
-            <Carousel ref={arrowRef} {...settings}>
+            <Slider ref={arrowRef} {...settings}>
                 <Link to={`review/${props.id[5]}`} key={props.id}>
                     <div className='each-game'>
                         <img className="each-game-img" src={props.image[5]} alt="" />
@@ -92,8 +93,16 @@ function GameCarousel(props) {
                     <h3 className="h3-in-each-game"></h3>
                 </div>
                 </Link>
-            </Carousel>
+            </Slider>
+            <div className="button-game-slider">
+                <button className="back" onClick={() => arrowRef.current.slickPrev()}>
+                    {<FaChevronLeft />}
+                </button>
+                <button className="next" onClick={() => arrowRef.current.slickNext()}>
+                    {<FaChevronRight />}
+                </button>
+            </div>
         </>
     )
 }
-export default GameCarousel
+export default GameSlider
