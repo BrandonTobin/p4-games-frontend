@@ -20,8 +20,9 @@
 .slider {
   display: flex;
   height: 500px!important;
-  width: 400px!important;
-  margin:0 auto;
+  width: 350px!important;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 .carousel-indicators{
 max-width: 300px;
@@ -81,7 +82,7 @@ margin: 0 auto!important;
       margin-left: 0px!important;
   }
   .games-slide-bar{
-      width: 1000px;
+      width: 500px;
   }
   .next{
       margin-left: 1000px!important;

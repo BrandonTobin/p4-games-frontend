@@ -24,7 +24,7 @@ function Slider(props) {
             const eachGame = game.map((games, imageIndex) =>
                 
                 <Carousel.Item key={imageIndex} interval={5000}>
-                   `<a href={`/review/${games._id}`}>
+                  <a href={`/review/${games._id}`}>
                     <img
                         className="slider"
                         src={games.image}
