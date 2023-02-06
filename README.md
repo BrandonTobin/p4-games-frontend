@@ -58,18 +58,6 @@ Game Reviews is a MERN Stack Video Game Review Application. It is a web-based pl
 
 ---
 
-# Strech Goals
-
--Cleanup code
-
--Fix image carousel for home page
-
--Get video games to display average rating
-
--On the review page, only display the reviews and no ability to click on them. Give the ability to the user to delete and update their review on that page rather than a seperate page.
-
----
-
 # User Stories
 
 -As a user, you will have the ability to create an account and login
@@ -87,3 +75,15 @@ Game Reviews is a MERN Stack Video Game Review Application. It is a web-based pl
 ![img](https://i.imgur.com/iaypc2d.png)
 
 ![img](https://i.imgur.com/6P6KzC6.png)
+
+---
+
+# Strech Goals
+
+-Cleanup code
+
+-Fix image carousel for home page
+
+-Get video games to display average rating
+
+-On the review page, only display the reviews and no ability to click on them. Give the ability to the user to delete and update their review on that page rather than a seperate page.
